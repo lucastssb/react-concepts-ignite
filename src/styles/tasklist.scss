@@ -53,10 +53,19 @@ section.task-list {
 
         padding: 14px;
         transition: filter 0.2s;
+        transition: background 0.5s;
 
         &:hover {
           filter: brightness(0.95);
         }
+
+        &:disabled {
+          &:hover {
+            filter: brightness(1);
+          }
+          background-color: var(--disabled-button);
+        }
+
       }
     }
   }
